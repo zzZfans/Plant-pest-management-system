@@ -1,0 +1,39 @@
+server:
+  port: 450 # 服务端口
+
+spring:
+  profiles:
+    active: dev # 环境设置
+  application:
+    name: ppms # 服务名
+  datasource: # mysql数据库连接
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://116.63.154.29:3306/PPMS?serverTimezone=GMT%2B8
+    username: root
+    password: 227859
+
+#mybatis日志
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath:com/zfans/ppms/mapper/xml/*.xml
+
+## 设置日志级别
+#logging:
+#  level:
+#    root: info # 默认
+
+#service-oss: # 调用的提供者的名称
+#  ribbon:
+#    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+
+logging:
+  level:
+    com.zfans.shenlan.service.edu.feign.OssFileService: debug #以什么级别监控哪个接口
+
+aliyun:
+  oss:
+    endpoint: oss-cn-chengdu.aliyuncs.com
+    keyid: LTAI5tJU9Qwu3AADFz1UcPzh
+    keysecret: 9DoKiSsGegR9w7efO4WiXSSHu3WUyj
+    bucketname: ppmsbk

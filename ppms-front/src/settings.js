@@ -1,7 +1,7 @@
 module.exports = {
 
-  BASE_API: 'http://116.63.154.29:450',
-  ossApi: 'http://116.63.154.29:450/oss/file/upload?module=',
+  BASE_API: 'http://localhost:450',
+  ossApi: 'http://localhost:450/oss/file/upload?module=',
   title: '苗木病虫害管理系统',
 
   /**

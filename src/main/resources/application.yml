@@ -8,9 +8,9 @@ spring:
     name: ppms # 服务名
   datasource: # mysql数据库连接
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://116.63.154.29:3306/PPMS?serverTimezone=GMT%2B8
+    url: jdbc:mysql://localhost:3306/PPMS?serverTimezone=GMT%2B8
     username: root
-    password: 227859
+    password: root
 
 #mybatis日志
 mybatis-plus:
@@ -33,7 +33,7 @@ logging:
 
 aliyun:
   oss:
-    endpoint: oss-cn-chengdu.aliyuncs.com
-    keyid: LTAI5tJU9Qwu3AADFz1UcPzh
-    keysecret: 9DoKiSsGegR9w7efO4WiXSSHu3WUyj
-    bucketname: ppmsbk
+    endpoint: endpoint
+    keyid: keyid
+    keysecret: keysecret
+    bucketname: bucketname
